@@ -1,6 +1,17 @@
 name = "Lareau2018ShCu"
-[compat]
-julia = "1.12.6"
-DrWatson = "2.19.1"
+desc = "Reproduction of Figures for Lareau et al. (2018)"
+authors = ["Nathanael Wong <natgeo.wong@outlook.com>"]
+
 [deps]
+ARMLive = "3cf54da3-541f-4d42-bdd0-41bf6096b485"
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 DrWatson = "634d3b9d-ee7a-5ddf-bec9-22491ea816e1"
+GeoRegions = "b001f823-fa75-4bff-bf55-6610c8f3688a"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+NCDatasets = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+
+[compat]
+julia = "1"
