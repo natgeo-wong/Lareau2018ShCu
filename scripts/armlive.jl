@@ -3,8 +3,11 @@ using DrWatson
 
 using ARMLive
 
-ads = ARMDataset(
-    stream="sgpdlfptC1.b1",path=datadir(),
-    start=Date(2011,7,19),stop=Date(2011,7,21)
-)
-download(ads)
+yr = parse(Int,ARGS[1])
+for mo = 1 : 12
+    ads = ARMDataset(
+        stream="bnfdlfptM1.b1",path=datadir(),
+        start=Date(yr,mo,1),stop=Date(yr,mo,daysinmonth(yr,mo))
+    )
+    download(ads,interactive=false)
+end
